@@ -1,38 +1,142 @@
+* {
+  max-width: 100%;
+}
+
 .App {
-  text-align: center;
+  background-color: #151515;
+  color: #f1c40f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header-container {
+  background-color: #1c1c1c;
+  color: #f1c40f;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  column-gap: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #f1c40f;
+  box-shadow: 0px 2.5px 5px rgb(0 0 0 / 12%);
+  min-height: 50px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Hero-container  {
   display: flex;
   flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: #f1c40f;
+  height: 50vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.Hero-name {
+  font-size: 1.5rem;
+}
+
+.Hero-link-desc-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Hero-links { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 25px;
+}
+
+.Hero-links > a > img {
+  align-items: center;
+  width: auto;
+  height: 50px;
+}
+
+.Hero-desc {
+  font-size: 1.25rem;
+  min-width: 25vw;
+  text-align: start;
+}
+
+.Emoji {
+  font-size: 1.5rem;
+}
+
+.Projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 200px;
+}
+.Projects-header{
+  font-size: 3rem;
+  color: #f1c40f;
+}
+
+.Projects-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(750px, 1fr));
+  grid-row: 1fr;
+  justify-items: center;
+}
+
+.Project-img {
+  align-items: center;
+  width: auto;
+  height: 250px;
+  border: 0px solid;
+  border-radius: 25px;
+  box-shadow: 0px 2px 5px rgb(0 0 0 / 12%);}
+
+.Tech-used {
   color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.Footer-container {
+  border-top: 1px solid #f1c40f;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Email-Phone-Contact {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.Git-Link-Contact {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+}
+
+.Git-Link-Contact > a > img { 
+  align-items: center;
+  width: auto;
+  height: 50px;
+}
+
+.Project-links > a {
+  padding: 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #f1c40f;
+}
+
+.Project-links > a:hover {
+  font-weight: bold;
+  background-color: #f1c40f;
+  color: #151515;
 }
